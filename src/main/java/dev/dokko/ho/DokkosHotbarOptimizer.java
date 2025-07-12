@@ -32,7 +32,6 @@ public class DokkosHotbarOptimizer implements ClientModInitializer {
 		lastSlot = slot;
 		// cast the interaction manager to custom accessor and invoke slot sync
 		((AccessorCPIM) client.interactionManager).invokeSyncSelectedSlot();
-		client.player.sendMessage(Text.literal("syncing slot "+slot));
 	}
 
 	@Override
