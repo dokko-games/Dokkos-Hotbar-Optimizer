@@ -12,6 +12,7 @@ import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
+import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 
 @Getter
@@ -31,5 +32,10 @@ public class HOConfig implements ConfigData {
     private static final Gson PRETTY = new GsonBuilder().setPrettyPrinting().create();
 
     @ConfigEntry.Gui.Tooltip()
+    @Comment("mod enabled?")
     private boolean enabled = true;
+
+    @ConfigEntry.Gui.Tooltip()
+    @Comment("if true, only totems will be hotbar synced")
+    private boolean onlySyncTotem = false;
 }

@@ -1,5 +1,7 @@
 {
   "text.autoconfig.dho.title": "Hotbar Optimizer Settings",
   "text.autoconfig.dho.option.enabled": "Hotbar Sync",
-  "text.autoconfig.dho.option.enabled.@Tooltip": "If true, hotbar sync will be enabled"
+  "text.autoconfig.dho.option.enabled.@Tooltip": "If true, hotbar sync will be enabled",
+  "text.autoconfig.dho.option.onlySyncTotem": "Only Sync Totems",
+  "text.autoconfig.dho.option.onlySyncTotem.@Tooltip": "If true, hotbar sync will only run when you switch to a totem"
 }
