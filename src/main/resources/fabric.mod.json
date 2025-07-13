@@ -17,6 +17,9 @@
 	"entrypoints": {
 		"client": [
 			"dev.dokko.ho.DokkosHotbarOptimizer"
+		],
+		"modmenu": [
+			"dev.dokko.ho.gui.ModMenuIntegration"
 		]
 	},
 	"mixins": [

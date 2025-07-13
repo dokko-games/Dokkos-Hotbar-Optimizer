@@ -6,16 +6,12 @@ import net.fabricmc.api.ClientModInitializer;
 
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 
 public class DokkosHotbarOptimizer implements ClientModInitializer {
@@ -36,22 +32,17 @@ public class DokkosHotbarOptimizer implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		Path configFolder = FabricLoader.getInstance().getConfigDir().resolve(MOD_ID);
-		try {
-			Files.createDirectories(configFolder);
-		} catch (IOException e) {
-			LOGGER.error("Failed to create config folder", e);
-		}
-		CONFIG = HOConfig.tryLoadFromFolder(configFolder);
+		HOConfig.init();
 		// In your mod init or a dedicated command registration class
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(
                 ClientCommandManager.literal("hotbar-optimizer")
                         // Handle no argument: just print current status
                         .executes(context -> {
-                            boolean enabled = CONFIG.isEnabled(); // Or CONFIG.getEnabled() depending on your config setup
+                            boolean enabled = CONFIG.isEnabled();
                             context.getSource().sendFeedback(
-                                    Text.literal("Hotbar Optimizer is currently " + (enabled ? "enabled" : "disabled"))
-                                            .formatted(enabled ? Formatting.GREEN : Formatting.RED)
+                                    Text.literal("Hotbar Optimizer is currently ")
+											.append(Text.literal( enabled ? "enabled" : "disabled")
+                                            .formatted(enabled ? Formatting.GREEN : Formatting.RED))
                             );
                             return 1;
                         })
@@ -60,20 +51,20 @@ public class DokkosHotbarOptimizer implements ClientModInitializer {
                                 .executes(context -> {
                                     CONFIG.setEnabled(true);
                                     context.getSource().sendFeedback(
-                                            Text.literal("Hotbar Optimizer is now enabled")
-                                                    .formatted(Formatting.GREEN)
+											Text.literal("Hotbar Optimizer is now ")
+													.append(Text.literal("enabled")
+															.formatted(Formatting.GREEN))
                                     );
-                                    CONFIG.saveToDefaultFolder();
                                     return 1;
                                 }))
                         .then(ClientCommandManager.literal("off")
                                 .executes(context -> {
                                     CONFIG.setEnabled(false);
                                     context.getSource().sendFeedback(
-                                            Text.literal("Hotbar Optimizer is now disabled")
-                                                    .formatted(Formatting.RED)
+											Text.literal("Hotbar Optimizer is now ")
+													.append(Text.literal("disabled")
+															.formatted(Formatting.RED))
                                     );
-                                    CONFIG.saveToDefaultFolder();
                                     return 1;
                                 }))
         ));

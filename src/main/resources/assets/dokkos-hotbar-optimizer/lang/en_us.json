@@ -1,0 +1,5 @@
+{
+  "text.autoconfig.dho.title": "Hotbar Optimizer Settings",
+  "text.autoconfig.dho.option.enabled": "Hotbar Sync",
+  "text.autoconfig.dho.option.enabled.@Tooltip": "If true, hotbar sync will be enabled"
+}
