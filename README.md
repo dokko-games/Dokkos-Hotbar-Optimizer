@@ -21,13 +21,4 @@ The consistency and responsiveness of rapid hotbar swaps, crucial for advanced c
 Using this mod provides a more precise and reliable hotbar experience by removing an useless delay from the client's packet sending mechanism. This leads to more predictable outcomes in critical situations and overall smoother interaction with your hotbar.
 
 ## How do I turn it on / off?
-The mod comes with the command
-
-```
-/hotbar-optimizer <on/off>
-```
-as well as
-```
-/hotbar-optimizer
-```
-which just tells you if the mod is currently enabled
+You can enable / disable the mod with ModMenu's settings screen
