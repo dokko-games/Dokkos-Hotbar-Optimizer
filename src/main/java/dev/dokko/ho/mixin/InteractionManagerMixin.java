@@ -4,7 +4,6 @@ import dev.dokko.ho.DokkosHotbarOptimizer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerInteractionManager;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 import net.minecraft.screen.slot.SlotActionType;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -26,10 +25,7 @@ public class InteractionManagerMixin {
         if (client.player.isCreative()) return;
 
         int selectedSlot = client.player.getInventory().selectedSlot;
-        ItemStack selectedStack = client.player.getInventory().getStack(selectedSlot);
-        if (!selectedStack.isEmpty()) {
-            syncItemState(client, selectedSlot);
-        }
+        syncItemState(client, selectedSlot);
     }
 
 }

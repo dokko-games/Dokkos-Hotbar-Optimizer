@@ -2,7 +2,6 @@ package dev.dokko.ho.mixin;
 
 import dev.dokko.ho.DokkosHotbarOptimizer;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -27,10 +26,7 @@ public class MinecraftClientMixin {
         if (currentSlot != DokkosHotbarOptimizer.lastSlot) {
             DokkosHotbarOptimizer.lastSlot = currentSlot;
 
-            ItemStack stack = client.player.getInventory().getStack(currentSlot);
-            if (!stack.isEmpty()) {
-                syncItemState(client, currentSlot);
-            }
+            syncItemState(client, currentSlot);
         }
     }
 

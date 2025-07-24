@@ -4,7 +4,6 @@ import dev.dokko.ho.DokkosHotbarOptimizer;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
-import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -34,9 +33,6 @@ public class KeybindingMixin {
 			// slots go from 0 to 8, not from 1 to 9
 			int slot = Integer.parseInt(bind.getTranslationKey().substring("key.hotbar.".length())) - 1;
 			if(slot < 0 || slot > 8) return;
-			ItemStack stack = player.getInventory().getStack(slot);
-			// return if the stack is empty
-			if(stack.isEmpty())return;
 			// sync hotbar!
 			syncItemState(client, slot);
 		}
