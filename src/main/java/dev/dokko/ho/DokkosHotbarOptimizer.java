@@ -21,7 +21,6 @@ public class DokkosHotbarOptimizer implements ClientModInitializer {
 
 	public static void syncItemState(MinecraftClient client, int slot) {
 		if(!CONFIG.getItemsToSync().isIn(client.player.getInventory().getStack(slot).getItem()))return;
-		client.player.sendMessage(Text.literal("sync "+slot));
 		client.player.getInventory().selectedSlot = slot;
 		lastSlot = slot;
 		// cast the interaction manager to custom accessor and invoke slot sync
