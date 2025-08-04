@@ -4,5 +4,7 @@
   "setting.dho.enabled.tooltip": "If on, hotbar sync will run",
   "setting.dho.itemsToSync": "Items to Sync",
   "setting.dho.itemsToSync.tooltip": "The list of items that the mod will run on. In order to modify, enter a singleplayer creative world",
-  "setting.dho.itemsToSync.editor": "Edit Items to Sync"
+  "setting.dho.itemsToSync.editor": "Edit Items to Sync",
+  "setting.dho.debugMode": "§6Debug Mode",
+  "setting.dho.debugMode.tooltip": "If on, syncs will be logged and the mod will run in singleplayer. You are not meant to use this, please keep it disabled"
 }

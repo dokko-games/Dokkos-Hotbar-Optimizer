@@ -17,9 +17,11 @@ public class MinecraftClientMixin {
         //same logic as KeybindingMixin
         MinecraftClient client = MinecraftClient.getInstance();
 
+        if(client.isInSingleplayer() && !DokkosHotbarOptimizer.CONFIG.isDebugMode())return;
+
         if (!DokkosHotbarOptimizer.CONFIG.isEnabled()) return;
         if (client.player == null || client.interactionManager == null) return;
-        if (client.player.isCreative()) return;
+        if (client.player.isInCreativeMode()) return;
 
         int currentSlot = client.player.getInventory().selectedSlot;
 

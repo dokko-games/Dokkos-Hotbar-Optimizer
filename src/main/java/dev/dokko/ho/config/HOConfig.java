@@ -27,6 +27,10 @@ public class HOConfig implements Config {
     @Setting
     public ItemList itemsToSync = new ItemList(true);
 
+    @Setting
+    @BooleanSetting(type = BooleanSetting.ONOFF)
+    public boolean debugMode = false;
+
     @Override
     public void init(ConfigSupplier<?> supplier) {
         DokkosHotbarOptimizer.CONFIG = this;
