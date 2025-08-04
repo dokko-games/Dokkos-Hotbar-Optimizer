@@ -22,12 +22,15 @@ public class KeybindingMixin {
 		KeyBinding bind = (KeyBinding) (Object)this;
 		// Get Minecraft.getMinecraft();
 		MinecraftClient client = MinecraftClient.getInstance();
+		if(client.isInSingleplayer() && !DokkosHotbarOptimizer.CONFIG.isDebugMode())return;
 		// If the interaction manager is null, then we cannot sync the item state
 		if(client.interactionManager == null)return;
 		// Get mc.thePlayer
 		ClientPlayerEntity player = client.player;
 		// If there's no player, then we obviously cannot sync the item state
 		if(player == null)return;
+		// We don't sync creative mode
+		if(player.isInCreativeMode())return;
 		// hotbar keys: key.hotbar.(1-9)
 		if(bind.getTranslationKey().startsWith("key.hotbar.")){
 			// slots go from 0 to 8, not from 1 to 9
