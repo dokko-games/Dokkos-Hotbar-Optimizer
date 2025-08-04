@@ -1,0 +1,10 @@
+{
+  "text.dho.config.screen": "Paramètres de Hotbar Optimizer",
+  "setting.dho.enabled": "État du mod",
+  "setting.dho.enabled.tooltip": "Active ou désactive le mod",
+  "setting.dho.itemsToSync": "Items à synchroniser",
+  "setting.dho.itemsToSync.tooltip": "Items avec lesquels le mod va fonctionner. Avant de modifier, entrez dans un monde solo créatif",
+  "setting.dho.itemsToSync.editor": "Modifie les items à synchroniser",
+  "setting.dho.debugMode": "§6Mode Debug",
+  "setting.dho.debugMode.tooltip": "Si activé, la synchronisation va être journalée et le mod va fonctionner en monde solo. Vous n'êtes pas censé utiliser ceci, veuillez le garder désactivé"
+}

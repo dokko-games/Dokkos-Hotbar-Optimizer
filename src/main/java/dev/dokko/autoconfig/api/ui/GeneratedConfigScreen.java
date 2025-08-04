@@ -77,7 +77,7 @@ public class GeneratedConfigScreen extends Screen {
 
     @Override
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        this.renderBackground(context, mouseX, mouseY, delta);
+        //this.renderBackground(context, mouseX, mouseY, delta);
 
         for (Element element : this.children()) {
             Drawable drawable = (Drawable) element;
