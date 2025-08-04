@@ -23,7 +23,7 @@ public class MinecraftClientMixin {
         if (client.player == null || client.interactionManager == null) return;
         if (client.player.isInCreativeMode()) return;
 
-        int currentSlot = client.player.getInventory().selectedSlot;
+        int currentSlot = client.player.getInventory().getSelectedSlot();
 
         if (currentSlot != DokkosHotbarOptimizer.lastSlot) {
             DokkosHotbarOptimizer.lastSlot = currentSlot;
