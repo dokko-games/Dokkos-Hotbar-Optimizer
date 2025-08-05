@@ -1,7 +1,7 @@
 plugins {
 	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
-	id 'io.freefair.lombok' version "8.4"
+	id 'io.freefair.lombok' version "8.14"
 }
 
 version = "${project.mod_version}+${project.minecraft_version}"
@@ -13,8 +13,8 @@ base {
 }
 
 repositories {
-	maven { url "https://maven.terraformersmc.com/" }
-	maven { url "https://maven.shedaniel.me/" }
+	maven { url = 'https://maven.terraformersmc.com/' }
+	maven { url = 'https://maven.shedaniel.me/' }
 }
 
 dependencies {
@@ -24,7 +24,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	// modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 

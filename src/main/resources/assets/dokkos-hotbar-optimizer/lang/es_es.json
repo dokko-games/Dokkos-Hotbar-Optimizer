@@ -1,0 +1,10 @@
+{
+  "text.dho.config.screen": "Ajustes de Hotbar Optimizer",
+  "setting.dho.enabled": "Hotbar Sync",
+  "setting.dho.enabled.tooltip": "Activa o desactiva el mod",
+  "setting.dho.itemsToSync": "Items para Sincronizar",
+  "setting.dho.itemsToSync.tooltip": "La lista de items en la que el mod se ejecutará. Para modificar, entre a un mundo creativo de un solo jugador",
+  "setting.dho.itemsToSync.editor": "Editar Items para Sincronizar",
+  "setting.dho.debugMode": "§6Modo Depurador",
+  "setting.dho.debugMode.tooltip": "Si está activo, las sincronizaciones serán registradas y el mod se ejecutará en un jugador. No debes usar esto, por favor mantenlo desactivado"
+}
