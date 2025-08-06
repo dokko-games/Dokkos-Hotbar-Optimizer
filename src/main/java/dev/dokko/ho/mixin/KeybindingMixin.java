@@ -1,6 +1,7 @@
 package dev.dokko.ho.mixin;
 
 import dev.dokko.ho.DokkosHotbarOptimizer;
+import dev.dokko.ho.ServerDatabase;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.option.KeyBinding;
@@ -17,7 +18,7 @@ public class KeybindingMixin {
 	private void onPressed(boolean pressed, CallbackInfo info) {
 		if(!pressed) return;
 		// Return if the mod is disabled
-		if(!DokkosHotbarOptimizer.CONFIG.isEnabled())return;
+		if(!DokkosHotbarOptimizer.CONFIG.isEnabled() || ServerDatabase.shouldBlock)return;
 		// Get "this" as KeyBinding
 		KeyBinding bind = (KeyBinding) (Object)this;
 		// Get Minecraft.getMinecraft();

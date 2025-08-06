@@ -1,16 +1,19 @@
 {
-	"required": true,
-	"package": "dev.dokko.ho.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"AccessorCPIM",
-		"KeybindingMixin",
-		"MinecraftClientMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "dev.dokko.ho.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "AccessorCPIM",
+    "AccessorIGH",
+    "ConnectScreenMixin",
+    "CPNHMixin",
+    "KeybindingMixin",
+    "MinecraftClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }

@@ -6,5 +6,9 @@
   "setting.dho.itemsToSync.tooltip": "Items avec lesquels le mod va fonctionner. Avant de modifier, entrez dans un monde solo créatif",
   "setting.dho.itemsToSync.editor": "Modifie les items à synchroniser",
   "setting.dho.debugMode": "§6Mode Debug",
-  "setting.dho.debugMode.tooltip": "Si activé, la synchronisation va être journalée et le mod va fonctionner en monde solo. Vous n'êtes pas censé utiliser ceci, veuillez le garder désactivé"
+  "setting.dho.debugMode.tooltip": "Si activé, la synchronisation va être journalée et le mod va fonctionner en monde solo. Vous n'êtes pas censé utiliser ceci, veuillez le garder désactivé",
+  "text.dho.block": "Hotbar Optimizer est banni sur ce serveur, donc il a automatiquement été désactivé",
+  "text.dho.flag": "De multiples échanges par tick ont été détectés sur ce serveur, donc le mod a automatiquement été désactivé",
+  "setting.dho.allowTickSwitches": "Autoriser plusieurs échanges par tick",
+  "setting.dho.allowTickSwitches.tooltip": "Si vous activez vous allez pouvoir changer les items plusieurs fois par tick. Il est possible que certains anticheats peuvent le détecter, donc il impossible de se faire bannir si cette option est désactivée"
 }

@@ -1,10 +1,14 @@
 {
   "text.dho.config.screen": "Ajustes de Hotbar Optimizer",
+  "text.dho.block": "Hotbar Optimizer está baneado en este servidor, se desactivó automáticamente",
+  "text.dho.flag": "Varios Cambios / Tick es detectado en este servidor, se desactivó automáticamente",
   "setting.dho.enabled": "Hotbar Sync",
   "setting.dho.enabled.tooltip": "Activa o desactiva el mod",
   "setting.dho.itemsToSync": "Items para Sincronizar",
   "setting.dho.itemsToSync.tooltip": "La lista de items en la que el mod se ejecutará. Para modificar, entre a un mundo creativo de un solo jugador",
   "setting.dho.itemsToSync.editor": "Editar Items para Sincronizar",
   "setting.dho.debugMode": "§6Modo Depurador",
-  "setting.dho.debugMode.tooltip": "Si está activo, las sincronizaciones serán registradas y el mod se ejecutará en un jugador. No debes usar esto, por favor mantenlo desactivado"
+  "setting.dho.debugMode.tooltip": "Si está activo, las sincronizaciones serán registradas y el mod se ejecutará en un jugador. No debes usar esto, por favor mantenlo desactivado",
+  "setting.dho.allowTickSwitches": "Permitir varios cambios / tick",
+  "setting.dho.allowTickSwitches.tooltip": "Si activado podrás cambiar de objeto varias veces en un tick. Esto puede ser detectado por algunos anticheats, así que para estar protegido de baneos mantenlo desactivado"
 }

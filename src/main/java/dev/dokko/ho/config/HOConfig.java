@@ -31,6 +31,10 @@ public class HOConfig implements Config {
     @BooleanSetting(type = BooleanSetting.ONOFF)
     public boolean debugMode = false;
 
+    @Setting
+    @BooleanSetting()
+    public boolean allowTickSwitches = false;
+
     @Override
     public void init(ConfigSupplier<?> supplier) {
         DokkosHotbarOptimizer.CONFIG = this;
