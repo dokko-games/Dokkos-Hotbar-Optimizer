@@ -8,7 +8,8 @@
     "ConnectScreenMixin",
     "CPNHMixin",
     "KeybindingMixin",
-    "MinecraftClientMixin"
+    "MinecraftClientMixin",
+    "optout.ClientPlayNetworkHandlerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
