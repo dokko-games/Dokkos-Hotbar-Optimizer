@@ -13,7 +13,7 @@
   "setting.dho.allowTickSwitches.tooltip": "Si ettá activo, podrás cambiar de obheto varias vece\u0027 en un tick. Etto puede ser detectao pôh algunos anticheats, así que para ettar protegio de baneos mantenlo desactivao",
   "setting.dho.debugModeLogging": "Regittro",
   "setting.dho.debugModeLogging.tooltip": "Si el Modo Depuraôh y ette ahutte ettán activos, los syncs serán regittraos",
-  "setting.dho.sendModDisableMessages": "Enviar mensahe\u0027 de desactivación de mod",
+  "setting.dho.sendModDisableMessages": "Display der Ettao der Mod",
   "setting.dho.sendModDisableMessages.tooltip": "Si ettá activo, cuando te unas a un serviôh que detecte o bloquee Hotbar Optimizer verás una advertencia",
   "generatedBy": "dokko precompiler v1"
 }

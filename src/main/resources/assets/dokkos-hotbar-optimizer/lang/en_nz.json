@@ -11,9 +11,9 @@
   "setting.dho.debugMode.tooltip": "If on, the mod will run in singleplayer and blocked servers. You are not meant to use this, please keep it disabled",
   "setting.dho.debugModeLogging": "Logging",
   "setting.dho.debugModeLogging.tooltip": "If Debug Mode and this setting are both on, syncs will be logged",
-  "setting.dho.sendModDisableMessages": "Send Mod Disable Messages",
+  "setting.dho.sendModDisableMessages": "Mod Status Display",
   "setting.dho.sendModDisableMessages.tooltip": "If enabled, when you join a server that flags or blocks Hotbar Optimizer you will see a warning on your screen",
   "setting.dho.allowTickSwitches": "Allow Multiple Switches / Tick",
   "setting.dho.allowTickSwitches.tooltip": "If enabled you will be able to switch items multiple times in a tick. This might flag on some anticheats, so to be completely safe from bans keep this disabled",
-  "generatedBy": "dokko precompiler v1"
+  "generatedBy": "dokko precompiler v2"
 }

@@ -13,7 +13,7 @@
   "setting.dho.allowTickSwitches.tooltip": "Si está activo, podrás cambiar de objeto varias veces en un tick. Esto puede ser detectado por algunos anticheats, así que para estar protegido de baneos mantenlo desactivado",
   "setting.dho.debugModeLogging": "Registro",
   "setting.dho.debugModeLogging.tooltip": "Si el Modo Depurador y este ajuste están activos, los syncs serán registrados",
-  "setting.dho.sendModDisableMessages": "Enviar mensajes de desactivación de mod",
+  "setting.dho.sendModDisableMessages": "Display del Estado del Mod",
   "setting.dho.sendModDisableMessages.tooltip": "Si está activo, cuando te unas a un servidor que detecte o bloquee Hotbar Optimizer verás una advertencia",
-  "generatedBy": "dokko precompiler v1"
+  "generatedBy": "dokko precompiler v2"
 }
