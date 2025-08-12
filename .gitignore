@@ -41,3 +41,4 @@ replay_*.log
 
 # dokko
 src/main/resources/drawings
+src/main/java/dev/dokko/precompiler

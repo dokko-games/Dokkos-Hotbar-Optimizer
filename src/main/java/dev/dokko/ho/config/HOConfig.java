@@ -30,6 +30,9 @@ public class HOConfig implements Config {
     @Setting
     @BooleanSetting(type = BooleanSetting.ONOFF)
     public boolean debugMode = false;
+    @Setting
+    @BooleanSetting(type = BooleanSetting.ONOFF)
+    public boolean debugModeLogging = false;
 
     @Setting
     @BooleanSetting()

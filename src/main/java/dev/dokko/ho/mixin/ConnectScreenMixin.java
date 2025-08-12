@@ -1,5 +1,6 @@
 package dev.dokko.ho.mixin;
 
+import dev.dokko.ho.DokkosHotbarOptimizer;
 import dev.dokko.ho.ServerDatabase;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.multiplayer.ConnectScreen;
@@ -18,6 +19,7 @@ public class ConnectScreenMixin {
 
         MinecraftClient client = MinecraftClient.getInstance();
         ServerInfo entry = client.getCurrentServerEntry();
+        if(DokkosHotbarOptimizer.CONFIG.isDebugMode())return;
 
         if (entry != null) {
             String address = entry.address;

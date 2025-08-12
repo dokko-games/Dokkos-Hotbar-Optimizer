@@ -1,5 +1,6 @@
 package dev.dokko.autoconfig.api.ui;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import dev.dokko.autoconfig.api.AutoConfig;
 import dev.dokko.autoconfig.api.config.Config;
 import dev.dokko.autoconfig.api.ui.element.UIElement;
@@ -23,7 +24,7 @@ public class GeneratedConfigScreen extends Screen {
     private int scrollOffset = 0;
     private static final int SPACING = 35;
     private static final int TOP_MARGIN = 22;
-    private static final int BOTTOM_MARGIN = 25; // Enough space above the done button
+    private static final int BOTTOM_MARGIN = 28; // Enough space above the done button
 
     public GeneratedConfigScreen(Config config, List<UIElement> elements, Screen parent) {
         super(Text.translatable("text." + config.getModId() + ".config.screen"));
@@ -85,16 +86,23 @@ public class GeneratedConfigScreen extends Screen {
             drawable.render(context, mouseX, mouseY, delta);
         }
 
-        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 10, 0xFFFFFF);
+        // Determine clipping area
+        int clipX = 0; // starting X of scissor area
+        int clipY = TOP_MARGIN; // starting Y (from top)
+        int clipWidth = this.width;
+        int clipHeight = height - TOP_MARGIN - BOTTOM_MARGIN;
 
-        int renderBottom = height - BOTTOM_MARGIN;
+
+        //RenderSystem.enableScissor(scissorX, scissorY, scissorWidth, scissorHeight);
+        context.enableScissor(clipX, clipY, clipX+clipWidth, clipY+clipHeight);
 
         for (ClickableWidget widget : renderedWidgets) {
-            int widgetBottom = widget.getY() + widget.getHeight();
-            if (widget.getY() >= TOP_MARGIN && widgetBottom <= renderBottom) {
-                widget.render(context, mouseX, mouseY, delta);
-            }
+            widget.render(context, mouseX, mouseY, delta);
         }
+
+        RenderSystem.disableScissor();
+
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.width / 2, 10, 0xFFFFFF);
 
     }
 }

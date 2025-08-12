@@ -10,5 +10,9 @@
   "setting.dho.debugMode": "§6Modo Depurador",
   "setting.dho.debugMode.tooltip": "Si está activo, las sincronizaciones serán registradas y el mod se ejecutará en un jugador. No debes usar esto, por favor mantenlo desactivado",
   "setting.dho.allowTickSwitches": "Permitir varios cambios / tick",
-  "setting.dho.allowTickSwitches.tooltip": "Si activado podrás cambiar de objeto varias veces en un tick. Esto puede ser detectado por algunos anticheats, así que para estar protegido de baneos mantenlo desactivado"
+  "setting.dho.allowTickSwitches.tooltip": "Si activado podrás cambiar de objeto varias veces en un tick. Esto puede ser detectado por algunos anticheats, así que para estar protegido de baneos mantenlo desactivado",
+  "setting.dho.debugModeLogging": "Logging",
+  "setting.dho.debugModeLogging.tooltip": "Si el Modo Depurador y este ajuste están activos, los syncs serán loggeados",
+  "setting.dho.sendModDisableMessages": "Enviar mensajes de desactivación de mod",
+  "setting.dho.sendModDisableMessages.tooltip": "Si está activo, cuando te unas a un servidor que detecte o bloquee Hotbar Optimizer verás una advertencia"
 }
