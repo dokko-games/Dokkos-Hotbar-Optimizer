@@ -14,5 +14,6 @@
   "setting.dho.debugModeLogging": "Registro",
   "setting.dho.debugModeLogging.tooltip": "Si el Modo Depurador y este ajuste están activos, los syncs serán registrados",
   "setting.dho.sendModDisableMessages": "Enviar mensajes de desactivación de mod",
-  "setting.dho.sendModDisableMessages.tooltip": "Si está activo, cuando te unas a un servidor que detecte o bloquee Hotbar Optimizer verás una advertencia"
+  "setting.dho.sendModDisableMessages.tooltip": "Si está activo, cuando te unas a un servidor que detecte o bloquee Hotbar Optimizer verás una advertencia",
+  "generatedBy": "dokko precompiler v1"
 }

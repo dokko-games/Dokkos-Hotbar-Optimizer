@@ -1,0 +1,19 @@
+{
+  "text.dho.config.screen": "Ahutte\u0027 de Hotbar Optimizer",
+  "text.dho.block": "Hotbar Optimizer ettá baneao en ette serviôh, se desactivó automáticamente",
+  "text.dho.flag": "Varios Cambios / Tick e\u0027 detectao en ette serviôh, se desactivó automáticamente",
+  "setting.dho.enabled": "Hotbar Sync",
+  "setting.dho.enabled.tooltip": "Activa o desactiva el mod",
+  "setting.dho.itemsToSync": "Items para Sincronizar",
+  "setting.dho.itemsToSync.tooltip": "La litta de items en la que el mod se ehecutará. Para modificar, entre a un mundo creativo de un solo hugaôh",
+  "setting.dho.itemsToSync.editor": "Editar Items para Sincronizar",
+  "setting.dho.debugMode": "§6Modo Depuraôh",
+  "setting.dho.debugMode.tooltip": "Si ettá activo, las sincronizacione\u0027 serán regittradas y el mod se ehecutará en un hugaôh. No debe\u0027 usar etto, pôh favôh mantenlo desactivao",
+  "setting.dho.allowTickSwitches": "Permitir varios cambios / tick",
+  "setting.dho.allowTickSwitches.tooltip": "Si ettá activo, podrás cambiar de obheto varias vece\u0027 en un tick. Etto puede ser detectao pôh algunos anticheats, así que para ettar protegio de baneos mantenlo desactivao",
+  "setting.dho.debugModeLogging": "Regittro",
+  "setting.dho.debugModeLogging.tooltip": "Si el Modo Depuraôh y ette ahutte ettán activos, los syncs serán regittraos",
+  "setting.dho.sendModDisableMessages": "Enviar mensahe\u0027 de desactivación de mod",
+  "setting.dho.sendModDisableMessages.tooltip": "Si ettá activo, cuando te unas a un serviôh que detecte o bloquee Hotbar Optimizer verás una advertencia",
+  "generatedBy": "dokko precompiler v1"
+}

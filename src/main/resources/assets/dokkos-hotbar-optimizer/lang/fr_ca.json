@@ -6,7 +6,7 @@
   "setting.dho.itemsToSync.tooltip": "Items avec lesquels le mod va fonctionner. Avant de modifier, entrez dans un monde solo créatif",
   "setting.dho.itemsToSync.editor": "Modifie les items à synchroniser",
   "setting.dho.debugMode": "§6Mode Debug",
-  "setting.dho.debugMode.tooltip": "Si activé, la synchronisation va être journalée et le mod va fonctionner en monde solo. Vous n'êtes pas censé utiliser ceci, veuillez le garder désactivé",
+  "setting.dho.debugMode.tooltip": "Si activé, la synchronisation va être journalée et le mod va fonctionner en monde solo. Vous n\u0027êtes pas censé utiliser ceci, veuillez le garder désactivé",
   "text.dho.block": "Hotbar Optimizer est banni sur ce serveur, donc il a automatiquement été désactivé",
   "text.dho.flag": "De multiples échanges par tick ont été détectés sur ce serveur, donc le mod a automatiquement été désactivé",
   "setting.dho.allowTickSwitches": "Autoriser plusieurs échanges par tick",
@@ -14,5 +14,6 @@
   "setting.dho.debugModeLogging": "Journalisation",
   "setting.dho.debugModeLogging.tooltip": "Si le mode debug and ce paramètre sont activés, les synchronisations vont être journalées",
   "setting.dho.sendModDisableMessages": "Envoie les messages de désactivation",
-  "setting.dho.sendModDisableMessages.tooltip": "Si activé, quand vous rejoignez un serveur qui détecte ou bloque Hotbar Optimizer vous allez voir un message sur votre écran"
+  "setting.dho.sendModDisableMessages.tooltip": "Si activé, quand vous rejoignez un serveur qui détecte ou bloque Hotbar Optimizer vous allez voir un message sur votre écran",
+  "generatedBy": "dokko precompiler v1"
 }
